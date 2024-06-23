@@ -1,0 +1,66 @@
+body{
+    margin:0 ;
+}
+
+.container {
+    background-color: aquamarine;
+    padding: 25px;
+}
+
+
+.caja {
+    position: relative;
+    background-color: brown;
+    width:  81px;
+    height: 80px;
+    display: flex;
+    /* transform: translate(100px, 100px); */
+    /* transform: scale(2);   transforma el elemto */
+    transition: transform 1s; /* es lo mejor para hacer animaciones*/
+     transform: skew(20deg); /*deg son grados*/
+
+
+}
+
+
+.caja:hover {
+    transform: scalex(0.2);   transform: translate(150px);
+
+    
+}
+
+
+b{
+    margin: auto;
+}
+
+
+.cajax{
+    background: red ;
+    width: 100%;
+    height: 150px;
+}
+
+
+.cajax__hijo{
+    background-color: rgb(29, 191, 8);
+    padding: 30px;
+    display: inline-block;
+    width:  40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 1px;
+    border: black 3px solid ;
+    display: flex;
+
+}
+
+.cajax__li{
+    display: none;
+}
+
+
+.cajax > cajax__li:hover {
+
+    display: flex;
+}

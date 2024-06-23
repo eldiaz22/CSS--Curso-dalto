@@ -1,0 +1,28 @@
+
+:root{
+    --color-rojo-claro:#f44;
+    --color-azul-claro:#44f;
+}
+
+p{
+ --color-rojo-claro:#000;
+    width: 200px;
+    height: 200px;
+    background: var(--color-rojo-claro);
+}
+
+
+
+.caja1{
+    background: var(--color-rojo-claro);
+    width: 200px;
+    height: 200px;
+    margin: 0 0 5px 0;
+}
+
+.caja2 {
+    background: var(--color-azul-claro);
+    width: 200px;
+    height: 200px;
+
+}

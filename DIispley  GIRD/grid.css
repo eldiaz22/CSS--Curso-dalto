@@ -1,0 +1,84 @@
+body{
+    background:radial-gradient(circle,#fff,#bbb);
+}
+
+.gird-container{
+    display: grid;
+    /* grid-template-columns: repeat(3,minmax(min-content, 400px));  /* fr reparte el espacio disponible al la propiedad como flew-grow / auto fill   auto fit */
+    grid-template-rows:repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+   /* grid-row-gap :10px;  separa entre ellas*/
+   /* grid-gap: 10px; /*se separa entre ellas*/ 
+   grid-auto-rows: 150px;   /* grid explecito lo que sobra*/
+   grid-auto-flow: dense; /* rellenar huevos */
+   color: #fff;
+  /*  justify-items: center;
+   align-items: center;
+ */
+justify-content: center;    align-content: center;    /*space evenly la misma distancia cada una*/
+ height: 600px;
+ background-color: rgb(75, 76, 77);
+ align-items: center;
+ justify-items: center;
+
+}
+
+.grid-item{
+    border: solid 2px #fff;
+    background: #111;
+    font-size: 30px;
+    padding: 50px;
+       
+    
+}
+.grid-item:nth-child(4) {
+    align-self: end;
+}
+.grid-item:nth-child(7) { 
+    align-self: start;
+}
+
+.grid-item:nth-child( 5){
+    justify-self: end;  /*alinia por columna*/
+}
+.grid-item:nth-child(6) { 
+  /*  justify-self: start; self se una para los item*/
+    place-self: end  start;
+    order: 5;
+    
+}
+
+
+.grid-item:last-child{
+    justify-self: end;
+    background-color: aquamarine;
+    order: 2 ;
+}
+
+
+
+
+/*.grid-item:first-child {
+  /*   background: #080;
+    grid-column: 2/ span 2;
+    grid-row: 1/ span 2; */
+
+/* .grid-item:nth-child(2) {
+    background: #00a;
+} */
+
+
+
+
+/*grid explecito*/
+/* 
+.grid-item:first-child {
+    grid-column: 1/3;
+    grid-row: 1/ span 3;
+
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 3/7;
+ }
+ */

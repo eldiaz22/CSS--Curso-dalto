@@ -1,0 +1,559 @@
+ 
+ /*  selector {
+    * selector universal
+ [SELECT:"nombre"] {
+
+ } atributo
+
+id
+pseudo elemento  h2
+
+
+
+ } 
+
+ h1{
+    color: blue !important ;
+
+ }
+ .color{
+    color: red;
+ }
+.contact-form__input:first-child:first-child {
+    color: blueviolet;
+}
+.contact-form__input--active {
+    color: blue;
+}
+
+.medidas-form{
+   font-size: 20px;
+   /* background-color: black; */
+  /*  width: 50vw;  medias relativa que ocupa la pantalla
+   height: 100vw; 
+ 
+
+}
+
+
+.medidas-form__h1{
+   /* font-size: 5em;   1em son 16px pero debes tener en cuenta el contenedor
+    font-size: 5em;
+    color: rgb(236, 165, 11);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height:  1; nace del centro del la letra 1/2 arriba y abajo  ocupa el espacio
+    /* font-weight: 4000; cambia el grosor de la letra 
+
+}
+
+
+
+ */
+
+
+
+ h2{
+   background-color: red;
+   display: inline-block;
+   /* padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 20px; */
+ /* padding: 20px 30px ; */
+ padding: 100px;
+ box-sizing:border-box;
+ margin: 10px;
+ border-radius: 50%;
+ border: solid 1px #0fdf;
+ box-shadow: 2px 3px 15px 0 black;
+ text-shadow: 2px 2px 7px black;
+ transform: rotate(45deg);
+ }
+ /* 
+ .caja1{
+   width: 200px;
+   height: 200px;
+   background-color: red;
+   margin: auto;
+   display: inline;
+ }
+ .caja2{
+   background-color: aqua;
+   width: 200px;
+   height: 200px;
+   margin: auto;
+   display: inline;
+   /* border: solid black 10px; */
+   /* outline:rgb(19, 18, 18) solid 10px; es un border pero no ocupa espacio */
+ 
+ /* relative
+ div{
+   background-color: blue;
+   width: 200px;
+   height: 200px;
+
+ }
+ .caja1{
+   background-color: aqua;
+ }
+.caja2{
+   background-color: blueviolet;
+   position: relative;
+   top: 50px;
+   left: 30px;
+   z-index: 10;
+}
+
+  .caja3 {
+   background-color: chartreuse;
+   position: relative;
+   z-index: 40;
+   
+  }
+  .caja4{
+   background-color: darkcyan;
+  }
+
+  .padre{
+   background-color: blue;
+   height: 300px;
+   width: 200px;
+   margin: 40px;
+
+   
+  }
+  .hijo {
+   background: red;
+   width: 120px;
+   height: 120px;
+position: relative;
+ top: -20px;
+ left: -20px;
+ z-index: -1 ;
+  }
+
+
+
+*/
+/* div {
+   width: 200px; 
+   height:200px ;
+   position: absolute;
+   
+}
+
+div div {
+   background:  yellow;
+   width: 100px;
+   height: 100px;
+} */
+
+
+/* displey position*/
+.contenedor {
+position: relative;
+width: 450px;
+height: 450px;
+margin: 50px auto;
+border:  solid red 2px;
+background-color: aqua;
+ 
+}
+
+.absolute1 {
+top: 0;
+outline: green  5px solid; /*no ocupa espacio*/
+}
+
+.absolute2 {
+   border: solid 5px  green;
+right: 0;
+}
+
+.absolute3 {
+   bottom: 0;
+   right: 0;
+}
+
+.absolute4 {
+left: 0;
+bottom: 0;
+overflow: auto;
+}
+
+ /*seudo elemntos*/
+
+
+.texto {
+   padding: 10px;
+   display: inline-block; /*no funciona con inline*/
+}
+.texto::first-line{
+   color: aqua;
+}
+.texto::first-letter{
+   font-size: 30px;
+   color: black;
+}
+
+/* 
+form{
+   margin: 100px auto;
+   background-color: #555;
+   padding: 100px;
+   width:  50%;
+   text-align: center;
+
+}
+input{
+   padding: 5px;
+   width: 100%;
+}
+
+input::placeholder{
+   color: blue;
+}
+
+input::selection{
+   background-color: aqua;
+} */
+
+
+b{
+   padding: 6px;
+
+}
+
+ b::before{
+   content:"SoyUnBefore";
+/*NO MUESTRAN CONTENIDO*/
+   color: #fff;
+   background-color: chartreuse;
+}
+ 
+b::after{
+   content:"SoyUnAfter";
+   color: aqua;
+   background-color: black;
+   
+}
+ 
+/*pseudo clases*/
+.caja1{
+   background-color: aqua;
+   width: 200px;
+   height: 200px;
+   transition: all 1s;
+
+
+
+}
+
+.caja1:hover{
+   background-color: rgb(39, 203, 10);
+   width: 300px;
+   height: 300px;
+   
+
+}
+
+.link:link{
+   color: rgb(26, 202, 64);
+}
+.link:visited{
+   color: chocolate;
+}
+
+.cajaactive{
+   width: 250px;
+   height: 200px;
+   background-color: red;
+   margin: 25px;
+   transition: all 1s;
+}
+.cajaactive:active{
+   background: blue;
+   width: 600px;
+}
+.inputfocus{
+   margin: 25px;
+   background-color: #555;
+   transition: background 0.4s, padding  0.4s ;
+}
+.inputfocus:focus{
+   background: white;
+   padding: 25px;
+}
+
+.divlap{
+   margin: 25px;
+}
+.divlap b:lang(es){
+   background-color: blueviolet;
+   padding: 25px;
+}
+
+
+ /*objeto fit  y colores rgb*/
+
+
+.cajaimg{
+  width: 450px ;
+  height: 45% ;
+  margin: 25px;
+  background: rgb(0,225,0);   /*red green blue*/
+  /*background rgba = opacity  (0,0,0,1)*/
+  outline: solid rgb(0, 250,) 5px;
+  /*exegecimal*/
+  background: #000; /* 6 o 3 trabjar   4 es la opaciodad*/
+  background: rgb(250,150,0);
+}
+
+/* 
+.cajaimg img {
+   width: 100%;
+   height: 100%;
+   object-fit: none;
+    border: solid red 2px;    
+   object-position: right; */
+   /* display: flex; */
+   /* object-fit: scale-down; */
+ /*  object-fit: cover;   se ajusta el tamaño de container*/
+/*container contiene el tamaño de la imagen*/
+ /*object-fit: none ;  va a su tamaño original  */
+
+/* 
+div{
+   display: inline-block;
+   width: 40%;
+   margin: 1%;
+   background-color: #ddd;
+
+ }
+   
+h1{
+   font-size: 22px;
+}
+.div-caja__caja2{
+background-color:  rgb(199,200,200);
+}
+
+@media screen and (max-width:800px) {
+   div{
+      display: block;
+      width: 100%;
+   }
+   h1{
+      font-size:  20px ;
+   }
+   
+
+   
+}
+ */
+
+/*z index es como se muestra cada position*/
+ .nav__responsive-ul {
+   display: none;
+ }  /*para no mostar el menu resposive para dispositivo*/
+
+ .nav{
+   background-color: #48e;
+ }
+
+.nav__li{
+   display: inline-block;
+   padding: 9px;
+   color: #fff ; 
+}
+
+.nav__li a{
+   color: white;
+   text-decoration: none;
+}
+
+.nav__li:hover > a {
+   color: #ddd;
+}
+
+.nav li i {
+   box-sizing: border-box;
+   text-align: right;
+   margin-right: 5px;
+   font-size: 25px;
+   
+}
+
+.nav__li:hover{
+   color: #555;
+}
+
+
+
+
+
+.nav__responsive-button-container{
+   background-color: #69c;
+   width: 100%;
+   position: absolute;
+   margin: -64px;
+
+}
+
+.nav__responsive-button{
+ text-align: right;
+ padding: 6px 20px;
+ width: 100%;
+ font-size: 25px;
+}  /*no aparece por mas que tenga la resolucion de 500px*/ 
+   
+
+
+
+ 
+
+
+
+/*NAV  para dispositivo*/
+@media only screen and (max-width:500px ) {
+   .nav__ul{
+      display: none;
+   }
+    /*nav normal*/
+   
+   .nav{
+      height: 37px;
+      width: 100%;
+      background-color: #69c;
+   }
+
+   .nav__responsive-ul {
+      display: block;
+      position: absolute; 
+      background-color: #7af;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+      margin-top: 37px;
+      padding-top: 27px;
+
+   }
+   .nav__li-container{
+      position: relative;
+      top: -1000px;;
+      height: calc(100vh - 64px);
+      top:-100%;
+
+   }
+   .nav__responsive-li{
+      width: 100%;
+      padding: 9px 20px;
+   }
+
+   .nav__responsive-li i{
+      box-sizing: border-box;
+      text-align: right;
+      margin-right: 5px;
+      color: #016;
+      width: 30px;
+
+   }
+
+.nav__responsive-li a{
+   text-decoration: none;
+   color: #016;
+}
+}
+
+/* flex cuestionario */
+body{
+   background-color: #111;
+}
+.flex-container2{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   background: #333;
+   margin: 50px 30px;
+   padding: 20px;
+   border: solid 5px #fff;
+   outline: solid 5px red ;
+}
+.form{
+   min-width: 300px;
+   flex: 1;
+   text-align: center;
+   padding: 10px;
+   order: 5;
+
+}
+.form__input{
+   width: 100%;
+   padding: 7px;
+   margin: 6px 0;
+   border: none;
+   border-bottom: 3px solid #fdd;
+   background: transparent;
+   color: #fff;
+
+
+}
+.form__input:focus{
+   background: linear-gradient(to bottom, transparent,#223);
+   outline:none;
+   border: solid #888 3px;
+ }
+
+.form textarea{
+   min-height: 140px;
+   resize: none;
+
+}
+
+
+.caja {
+    margin: auto;
+   background: rgb(31, 189, 57);
+   width: 380px;
+   height: 200px;
+   background-image: url(https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg);
+   background-size: contain;
+   background-attachment: fixed; /*inherit*/
+ /* background-clip: padding-box ; /*recorta la imagen*/
+/*background-origin:content-box; la crea apartir de hay */
+ /*background-position:  right center; *primero es horizontal y 2 vertical */
+
+}
+
+* {
+   scroll-behavior: smooth;
+
+}
+
+
+
+div {
+   color: beige;
+}
+
+
+
+.pepe {
+   padding: 20px;
+   background-color: #016;
+   font-size: 20px;
+   direction: rtl;
+   letter-spacing: 5px;
+}
+
+span {
+   background: rgb(55, 219, 13);
+   user-select: none;
+   -webkit-color:yellow;
+   -moz-color:red;
+}
+
+
+
+

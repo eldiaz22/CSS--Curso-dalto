@@ -1,0 +1,98 @@
+body{
+    min-height: 200vh;
+}
+
+
+.container {
+    background-color: aquamarine;
+    padding: 25px;
+}
+
+
+.caja {
+    position: relative;
+    background-color: brown;
+    width:  81px;
+    height: 80px;
+    animation-name: desplazarse;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;   /*numero de repeat*/
+    animation-direction: alternate;  /*alternate   alternate-reverse*/
+    animation-fill-mode:forwards ;  /*both*/ /*foward*/
+    animation-delay: 1s; /*espera un segundo para que empieze*/
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); /*curva*/
+    
+    
+}
+
+@keyframes desplazarse {
+    from{
+        background: blue;  
+        left: 0;
+    }
+
+    50% {
+        background-color: rgb(7, 7, 6);
+    }
+
+
+    100%{
+       left: 80%;
+       background-color: chartreuse;
+    }
+}
+
+
+.cajad{
+    background-color: rgb(34, 34, 35);
+    padding: 20px;
+    display: inline-block;
+    min-height: 400px;
+    position: relative;
+    left: 200px;
+}
+
+.cajad:hover{
+    background-color: rgb(32, 5, 58);
+    transition: ease 2s;
+}
+
+.caja__hijo{
+    background-color: rgb(214, 123, 12);
+    width: 50px;
+    height: 60px;
+    animation: ease;
+    animation-name: desplazarse2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-direction: alternate;
+    position: relative;
+   border-radius: 10px;
+}
+
+.b {
+    left: 100px;
+}
+@keyframes desplazarse2 {
+    from {
+        background-color: rgb(19, 180, 11);
+        top: 1px;
+    }
+
+    100% {
+        background-color: rgb(198, 221, 211);
+         top: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
